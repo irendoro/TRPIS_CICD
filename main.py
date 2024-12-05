@@ -63,6 +63,10 @@ def is_prime(n):
             return False
     return True
 
+def multiply_numbers(a, b):
+    """Возвращает произведение двух чисел."""
+    return a * b
+
 class TestFactorial(unittest.TestCase):
     """
     @brief Тесты для функции factorial.
@@ -170,6 +174,16 @@ class TestIsPrime(unittest.TestCase):
         @brief Проверяет, что 7919 является простым числом.
         """
         self.assertTrue(is_prime(7919))
+
+class TestMultiplyNumbers(unittest.TestCase):
+    def test_multiply_positive_numbers(self):
+        self.assertEqual(multiply_numbers(3, 4), 12)
+
+    def test_multiply_negative_numbers(self):
+        self.assertEqual(multiply_numbers(-3, -5), 15)
+
+    def test_multiply_mixed_numbers(self):
+        self.assertEqual(multiply_numbers(3, -4), -12)
 
 if __name__ == "__main__":
     unittest.main()
