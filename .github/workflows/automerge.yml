@@ -1,26 +1,15 @@
-name: Auto Merge PR
-
+name: automerge
 on:
   pull_request:
-    types: [labeled]
-
+    branches:
+    - main
+    
 jobs:
   automerge:
-    if: github.event.label.name == 'automerge'
     runs-on: ubuntu-latest
     steps:
-      # Проверяем репозиторий
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      # Устанавливаем GitHub CLI для управления PR
-      - name: Set up GitHub CLI
-        uses: actions/setup-node@v4
-        with:
-          node-version: 16
-
-      # Выполняем автоматический merge, если PR прошёл проверки
-      - name: Auto Merge PR
-        run: gh pr merge ${{ github.event.pull_request.number }} --merge --admin
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Merge pull requests (automerge-action)
+      uses: pascalgn/automerge-action@v0.16.4
+    env:
+      GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      MERGE_LABELS: ""
