@@ -15,7 +15,7 @@ def add_numbers(a, b):
     """Возвращает сумму двух чисел."""
     return a + b
 
-
+print ("hell")
 class TestFactorial(unittest.TestCase):
     def test_factorial_zero(self):
         self.assertEqual(factorial(0), 1)
