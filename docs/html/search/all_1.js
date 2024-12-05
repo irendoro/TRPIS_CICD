@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['b_20tt_0',['&lt;tt&gt;add_numbers(a, b)&lt;/tt&gt;',['../md__r_e_a_d_m_e.html#autotoc_md4',1,'']]]
+  ['factorial_1',['factorial',['../namespacemain.html#a7c2aa8db8303a0e3f20dd5b354b0d08f',1,'main']]]
 ];

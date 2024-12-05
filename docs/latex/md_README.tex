@@ -1,0 +1,60 @@
+\hypertarget{md_README_autotoc_md1}{}\doxysection{Описание}\label{md_README_autotoc_md1}
+Этот проект содержит несколько функций для математических вычислений, а также тестов для проверки их корректности. Включает три функции\+:
+
+
+\begin{DoxyEnumerate}
+\item {\ttfamily factorial(n)} — вычисляет факториал числа.
+\item {\ttfamily add\+\_\+numbers(a, b)} — возвращает сумму двух чисел.
+\item {\ttfamily is\+\_\+prime(n)} — проверяет, является ли число простым.
+\end{DoxyEnumerate}
+
+Кроме того, в проекте есть набор тестов с использованием библиотеки {\ttfamily unittest} для проверки корректности работы этих функций.\hypertarget{md_README_autotoc_md2}{}\doxysection{Функции}\label{md_README_autotoc_md2}
+\hypertarget{md_README_autotoc_md3}{}\doxysubsection{$<$tt$>$factorial(n)$<$/tt$>$}\label{md_README_autotoc_md3}
+Вычисляет факториал числа {\ttfamily n}.
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Параметры\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily n} (int)\+: Неотрицательное целое число, для которого нужно вычислить факториал.
+\end{DoxyItemize}
+\item {\bfseries{Возвращаемое значение\+:}}
+\begin{DoxyItemize}
+\item Целое число — факториал числа {\ttfamily n}.
+\end{DoxyItemize}
+\item {\bfseries{Исключения\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily Value\+Error}\+: Если {\ttfamily n} отрицательное, выбрасывается исключение с сообщением \char`\"{}Факториал определен только для неотрицательных чисел.\char`\"{}
+\end{DoxyItemize}
+\item {\bfseries{Пример\+:}} \`{}\`{}\`{}python factorial(5) \# 120 factorial(0) \# 1 \`{}\`{}\`{}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md4}{}\doxysubsection{$<$tt$>$add\+\_\+numbers(a, b)$<$/tt$>$}\label{md_README_autotoc_md4}
+Возвращает сумму двух чисел {\ttfamily a} и {\ttfamily b}.
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Параметры\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily a} (int, float)\+: Первое число.
+\item {\ttfamily b} (int, float)\+: Второе число.
+\end{DoxyItemize}
+\item {\bfseries{Возвращаемое значение\+:}}
+\begin{DoxyItemize}
+\item Сумма чисел {\ttfamily a} и {\ttfamily b}.
+\end{DoxyItemize}
+\item {\bfseries{Пример\+:}} \`{}\`{}\`{}python add\+\_\+numbers(3, 4) \# 7 add\+\_\+numbers(-\/3, 5) \# 2 \`{}\`{}\`{}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md5}{}\doxysubsection{$<$tt$>$is\+\_\+prime(n)$<$/tt$>$}\label{md_README_autotoc_md5}
+Проверяет, является ли число {\ttfamily n} простым.
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Параметры\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily n} (int)\+: Число для проверки на простоту.
+\end{DoxyItemize}
+\item {\bfseries{Возвращаемое значение\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily True}, если число {\ttfamily n} простое, иначе {\ttfamily False}.
+\end{DoxyItemize}
+\item {\bfseries{Пример\+:}} \`{}\`{}\`{}python is\+\_\+prime(11) \# True is\+\_\+prime(4) \# False \`{}\`{}\`{}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md6}{}\doxysection{Тестирование}\label{md_README_autotoc_md6}
+Для тестирования функций используется модуль {\ttfamily unittest} 

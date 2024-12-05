@@ -1,0 +1,81 @@
+\hypertarget{namespacemain}{}\doxysection{main Namespace Reference}
+\label{namespacemain}\index{main@{main}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmain_1_1TestFactorial}{Test\+Factorial}}
+\item 
+class \mbox{\hyperlink{classmain_1_1TestAddNumbers}{Test\+Add\+Numbers}}
+\item 
+class \mbox{\hyperlink{classmain_1_1TestIsPrime}{Test\+Is\+Prime}}
+\item 
+class \mbox{\hyperlink{classmain_1_1TestMultiplyNumbers}{Test\+Multiply\+Numbers}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacemain_a7c2aa8db8303a0e3f20dd5b354b0d08f}{factorial}} (n)
+\item 
+def \mbox{\hyperlink{namespacemain_af2601a01ff315f8529ae770cd4ccf8e4}{add\+\_\+numbers}} (a, b)
+\item 
+def \mbox{\hyperlink{namespacemain_a65ae54f04b570a02b7960ca59680cacc}{is\+\_\+prime}} (n)
+\item 
+def \mbox{\hyperlink{namespacemain_ae753d505f5fcf5b615fa2dbac5fc67a8}{multiply\+\_\+numbers}} (a, b)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacemain_af2601a01ff315f8529ae770cd4ccf8e4}\label{namespacemain_af2601a01ff315f8529ae770cd4ccf8e4}} 
+\index{main@{main}!add\_numbers@{add\_numbers}}
+\index{add\_numbers@{add\_numbers}!main@{main}}
+\doxysubsubsection{\texorpdfstring{add\_numbers()}{add\_numbers()}}
+{\footnotesize\ttfamily def main.\+add\+\_\+numbers (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Эта функция принимает два числа a и b, и возвращает их сумму.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemain_a7c2aa8db8303a0e3f20dd5b354b0d08f}\label{namespacemain_a7c2aa8db8303a0e3f20dd5b354b0d08f}} 
+\index{main@{main}!factorial@{factorial}}
+\index{factorial@{factorial}!main@{main}}
+\doxysubsubsection{\texorpdfstring{factorial()}{factorial()}}
+{\footnotesize\ttfamily def main.\+factorial (\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Вычисляет факториал числа n.
+
+Эта функция принимает число n и возвращает его факториал (n!).
+Если число отрицательное, возбуждается исключение ValueError.
+
+@param n Целое число, для которого вычисляется факториал.
+@return Возвращает факториал числа n.
+@throws ValueError Если n < 0.
+
+@code
+factorial(5) -> 120
+factorial(0) -> 1
+@endcode
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemain_a65ae54f04b570a02b7960ca59680cacc}\label{namespacemain_a65ae54f04b570a02b7960ca59680cacc}} 
+\index{main@{main}!is\_prime@{is\_prime}}
+\index{is\_prime@{is\_prime}!main@{main}}
+\doxysubsubsection{\texorpdfstring{is\_prime()}{is\_prime()}}
+{\footnotesize\ttfamily def main.\+is\+\_\+prime (\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Проверяет, является ли число простым.
+
+Эта функция проверяет, является ли заданное число простым.
+
+@param n Целое число, которое проверяется на простоту.
+@return True, если число простое, иначе False.
+
+@code
+is_prime(2) -> True
+is_prime(9) -> False
+@endcode
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemain_ae753d505f5fcf5b615fa2dbac5fc67a8}\label{namespacemain_ae753d505f5fcf5b615fa2dbac5fc67a8}} 
+\index{main@{main}!multiply\_numbers@{multiply\_numbers}}
+\index{multiply\_numbers@{multiply\_numbers}!main@{main}}
+\doxysubsubsection{\texorpdfstring{multiply\_numbers()}{multiply\_numbers()}}
+{\footnotesize\ttfamily def main.\+multiply\+\_\+numbers (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Возвращает произведение двух чисел.\end{DoxyVerb}
+ 
