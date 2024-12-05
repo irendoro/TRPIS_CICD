@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['is_5fprime_0',['is_prime',['../namespacemain.html#aefbf80f810453c2f63732a9161054ea5',1,'main']]],
-  ['is_5fprime_20n_20tt_1',['&lt;tt&gt;is_prime(n)&lt;/tt&gt;',['../md__r_e_a_d_m_e.html#autotoc_md5',1,'']]]
+  ['main_3',['main',['../namespacemain.html',1,'']]],
+  ['main_2epy_4',['main.py',['../main_8py.html',1,'']]],
+  ['multiply_5fnumbers_5',['multiply_numbers',['../namespacemain.html#ae753d505f5fcf5b615fa2dbac5fc67a8',1,'main']]]
 ];
