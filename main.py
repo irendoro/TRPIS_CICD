@@ -11,6 +11,10 @@ def factorial(n):
         result *= i
     return result
 
+def add_numbers(a, b):
+    """Возвращает сумму двух чисел."""
+    return a + b
+
 class TestFactorial(unittest.TestCase):
     def test_factorial_zero(self):
         self.assertEqual(factorial(0), 1)
@@ -28,6 +32,16 @@ class TestFactorial(unittest.TestCase):
 
     def test_large_factorial(self):
         self.assertEqual(factorial(10), 3628800)
+
+class TestAddNumbers(unittest.TestCase):
+    def test_add_positive_numbers(self):
+        self.assertEqual(add_numbers(3, 4), 7)
+
+    def test_add_negative_numbers(self):
+        self.assertEqual(add_numbers(-3, -4), -7)
+
+    def test_add_mixed_numbers(self):
+        self.assertEqual(add_numbers(3, -4), -1)
 
 if __name__ == "__main__":
     unittest.main()
