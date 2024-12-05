@@ -27,18 +27,7 @@ def factorial(n):
 
 def add_numbers(a, b):
     """
-    @brief Возвращает сумму двух чисел.
-    
     Эта функция принимает два числа a и b, и возвращает их сумму.
-    
-    @param a Первое число.
-    @param b Второе число.
-    @return Сумма чисел a и b.
-    
-    @code
-    add_numbers(3, 4) -> 7
-    add_numbers(-3, -5) -> -8
-    @endcode
     """
     return a + b
 
