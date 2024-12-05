@@ -1,0 +1,27 @@
+name: Generate Documentation
+
+on:
+  pull_request:
+  push:
+    branches:
+      - release
+      
+jobs:
+  doxy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Install Doxygen
+      run: sudo apt-get update && sudo apt-get install doxygen
+    - uses: actions/checkout@v4
+      with:
+        ref: ${{ github.head_ref }}
+
+    - name: Run doxygen
+      run: |
+        doxygen
+    - uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: update doc
+
+     
