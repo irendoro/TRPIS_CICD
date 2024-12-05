@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: script
-      run: echo Hello, world!
+    - name: Run tests
+      run: python -m unittest main.py
