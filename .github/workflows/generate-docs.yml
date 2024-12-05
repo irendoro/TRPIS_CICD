@@ -5,23 +5,32 @@ on:
   push:
     branches:
       - release
-      
+     
 jobs:
   doxy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Install Doxygen
-      run: sudo apt-get update && sudo apt-get install doxygen
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
       with:
-        ref: ${{ github.head_ref }}
+        ref: ${{ github.head_ref }}  # Использует правильную ссылку для текущей ветки (в случае pull request)
+
+    - name: Install Doxygen
+      run: |
+        sudo apt-get update
+        sudo apt-get install doxygen
 
     - name: Run doxygen
       run: |
         doxygen
-    - uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: update doc
 
-     
+    - name: Commit and push documentation changes
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "Update documentation"
+        branch: release
+        file_pattern: "docs/**/*"  # Убедитесь, что изменения только в документации
+        commit_user_name: "github-actions[bot]"
+        commit_user_email: "github-actions[bot]@users.noreply.github.com"
+        token: ${{ secrets.GITHUB_TOKEN }}  # Использование токена для автоматического пуша
